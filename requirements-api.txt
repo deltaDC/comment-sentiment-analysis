@@ -1,0 +1,6 @@
+fastapi
+uvicorn[standard]
+transformers>=4.46,<5
+torch
+pydantic
+pyvi

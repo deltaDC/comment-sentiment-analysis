@@ -1,0 +1,17 @@
+# Step 1 — data pipeline
+youtube-comment-downloader
+pandas
+
+# Step 2 — model training (Jupyter notebooks)
+torch
+transformers>=4.46,<5
+accelerate>=0.26.0
+datasets
+scikit-learn
+numpy
+matplotlib
+seaborn
+pyvi
+joblib
+jupyter
+ipykernel

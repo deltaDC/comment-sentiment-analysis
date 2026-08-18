@@ -1,0 +1,26 @@
+.cursorindexingignore
+.specstory
+.vscode
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
+
+# Step 2 — Jupyter
+.ipynb_checkpoints/
+
+# Step 2 — large model artifacts
+model/artifacts/phobert/
+model/artifacts/phobert_weighted/
+model/artifacts/baseline.pkl
+
+# Step 4 — Next.js UI
+ui/node_modules/
+ui/.next/
