@@ -6,6 +6,9 @@ Fine-tuned weights are **not** in git (too big). Train on your machine, then run
 
 How it is built, and structure: [docs/architecture/architecture.md](docs/architecture/architecture.md).
 
+## For testing convenience
+- You can view the deployed project by this URL: https://matgrouptest-ui-658869844900.asia-southeast1.run.app
+
 ## Need
 
 - Docker + Docker Compose (API + UI)

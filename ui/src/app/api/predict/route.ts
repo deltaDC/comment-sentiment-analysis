@@ -1,8 +1,7 @@
 import { NextResponse } from "next/server";
 
+import { getApiUrl } from "@/lib/api-url";
 import { INVALID_TEXT_MSG, textHasInvalidChars } from "@/lib/validation";
-
-const API_URL = process.env.API_URL ?? "http://localhost:8000";
 
 export async function POST(request: Request) {
   try {
@@ -16,7 +15,7 @@ export async function POST(request: Request) {
       return NextResponse.json({ detail: INVALID_TEXT_MSG }, { status: 400 });
     }
 
-    const res = await fetch(`${API_URL}/predict`, {
+    const res = await fetch(`${getApiUrl()}/predict`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(body),

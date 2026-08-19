@@ -1,6 +1,11 @@
 import { SentimentForm } from "@/components/SentimentForm";
+import { getApiUrl } from "@/lib/api-url";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
+  const docsUrl = `${getApiUrl()}/docs`;
+  const docsLabel = docsUrl.replace(/^https?:\/\//, "");
   return (
     <main className="min-h-[100dvh] bg-[var(--surface)] px-4 py-12 md:py-16">
       <div className="mx-auto grid max-w-2xl gap-10">
@@ -22,12 +27,12 @@ export default function Home() {
         <footer className="text-sm text-[var(--text-muted)]">
           API docs at{" "}
           <a
-            href="http://localhost:8000/docs"
+            href={docsUrl}
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--accent)] underline-offset-2 hover:underline"
           >
-            localhost:8000/docs
+            {docsLabel}
           </a>
         </footer>
       </div>
